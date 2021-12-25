@@ -1,6 +1,6 @@
 import React from 'react';
-import { Button, Result } from 'antd';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { Result } from 'antd';
+import { Link } from 'react-router-dom';
 
 /**
  * 404 page.
@@ -12,8 +12,8 @@ const NotFound: React.FC = () => (
   <Result
     status="404"
     title="404"
-    subTitle="Sorry,not found."
-    extra={<Button type="primary">Back Home</Button>}
+    subTitle="您访问的页面不翼而飞了"
+    extra={<Link to="/">前往首页</Link>}
   />
 );
 
