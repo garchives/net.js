@@ -1,12 +1,13 @@
 import { Form, Input, Button, Checkbox } from 'antd';
 import { UserOutlined, LockOutlined } from '@ant-design/icons';
+import React from 'react';
 
 /**
  * Login page.
  *
  * @returns
  */
-const Login = () => {
+const Login: React.FC = () => {
   const onFinish = (values: any) => {
     console.log('Received values of form: ', values);
   };
@@ -56,3 +57,5 @@ const Login = () => {
     </Form>
   );
 };
+
+export default Login;
