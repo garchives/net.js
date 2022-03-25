@@ -1,14 +1,26 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import Home from './pages/home/Home';
-import reportWebVitals from './reportWebVitals';
+/**
+ * An entrypoint file that cannot be renamed.
+ */
 
-// Application entry point
+import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import reportWebVitals from './reportWebVitals';
+import routes from 'src/routes';
+import 'antd/dist/antd.css';
+import './index.css';
+
 ReactDOM.render(
-  <React.StrictMode>
-    <Home />
-  </React.StrictMode>,
+  // React Router V6
+  <Router>
+    <Routes>
+      {routes
+        .filter((_) => _.show === true)
+        .map((_) => {
+          return <Route path={_.path} element={<_.page />} />;
+        })}
+    </Routes>
+  </Router>,
+  // see 'public/index.html'
   document.getElementById('root'),
 );
 

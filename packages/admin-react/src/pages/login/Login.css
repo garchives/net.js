@@ -1,0 +1,53 @@
+.display-block {
+  display: block;
+  width: 100%;
+}
+
+.login-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 350px;
+  /* height: 350px; */
+  margin: -175px 0 0 -175px;
+  background-color: #ffffff;
+  padding: 30px;
+}
+
+.login-title {
+  text-align: center;
+  padding-bottom: 20px;
+  text-align: center;
+  padding-bottom: 20px;
+  display: flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.login-title .logo {
+  width: 40px;
+  margin-right: 8px;
+}
+
+.login-title .font {
+  vertical-align: text-bottom;
+  font-size: 16px;
+  text-transform: uppercase;
+  display: inline-block;
+  font-weight: 700;
+  color: #1890ff;
+  background-image: -webkit-gradient(
+    linear,
+    37.219838% 34.532506%,
+    36.425669% 93.178216%,
+    from(#29cdff),
+    to(#0a60ff),
+    color-stop(0.37, #148eff)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
